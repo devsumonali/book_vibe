@@ -18,7 +18,7 @@ const Hero = () => {
                 </Link>
             </div>
             <Image
-                src="/images/hero_img.jpg"
+                src="/images/hero-book.png"
                 alt="The Dating Playbook for Men by Andrew Ferebee"
                 width={318}
                 height={394}
