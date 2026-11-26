@@ -8,7 +8,7 @@ const Books = async () => {
     return (
         <section className="mx-auto my-10 w-full max-w-7xl px-5 py-5 md:w-5/6 md:px-0">
             <h2 className="mb-8 text-center text-4xl font-bold">Books</h2>
-            <BookCard books={books} />
+            <BookCard books={books.slice(0, 6)} />
         </section>
     );
 };
