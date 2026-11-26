@@ -12,7 +12,7 @@ const BookCard = ({ books }: getBookProps) => {
             {books.map((book) => {
                 return (
                     <Link
-                        href={`/listed-book/${book.bookId}`}
+                        href={`/books/${book.bookId}`}
                         key={book.bookId}
                         className="flex flex-col rounded-2xl border border-[#e2e2e2] bg-white p-5 font-sans text-[#131313]"
                     >

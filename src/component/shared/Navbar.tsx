@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 const Navbar = () => {
     const pathName = usePathname();
     const home = pathName === '/';
+    const books = pathName === '/books' || pathName.startsWith('/books/');
     const listedBooks = pathName === '/listed-book';
     const pagesToRead = pathName === '/page-to-read';
 
@@ -26,6 +27,15 @@ const Navbar = () => {
                                 className={`block rounded-md border px-3 py-2 ${home ? activeClass : inactiveClass}`}
                             >
                                 Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="/books"
+                                aria-current={books ? 'page' : undefined}
+                                className={`block rounded-md border px-3 py-2 ${books ? activeClass : inactiveClass}`}
+                            >
+                                Books
                             </Link>
                         </li>
                         <li>

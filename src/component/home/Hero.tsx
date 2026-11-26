@@ -11,7 +11,7 @@ const Hero = () => {
                     your bookshelf
                 </h1>
                 <Link
-                    href="/listed-book"
+                    href="/books"
                     className="mt-8 inline-block rounded-md bg-[#23be0a] px-5 py-3 font-sans text-sm font-bold text-white hover:bg-[#1da008]"
                 >
                     View The List

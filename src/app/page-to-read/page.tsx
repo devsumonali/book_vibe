@@ -1,7 +1,5 @@
-import React from 'react';
-
 const PagetoRead = () => {
-    return <div></div>;
+    return <main />;
 };
 
 export default PagetoRead;

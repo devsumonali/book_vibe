@@ -1,4 +1,5 @@
 import ReadButton from '@/component/bookDetails/ReadButton';
+import WishlistButton from '@/component/bookDetails/WishlistButton';
 import { getBooksDetails } from '@/lib/api/book';
 import Image from 'next/image';
 
@@ -64,13 +65,8 @@ const BookDetailsPage = async ({ params }: singleBookPromise) => {
                 </dl>
 
                 <div className="mt-6 flex gap-3 text-sm font-semibold">
-                    <ReadButton />
-                    <button
-                        type="button"
-                        className="cursor-pointer rounded-md border border-[#45b3bf] bg-[#59c6d2] px-5 py-3 text-white hover:bg-[#45b3bf]"
-                    >
-                        Wishlist
-                    </button>
+                    <ReadButton book={book} />
+                    <WishlistButton book={book} />
                 </div>
             </div>
         </main>
